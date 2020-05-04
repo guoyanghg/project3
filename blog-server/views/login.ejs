@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <link rel='stylesheet' href='/stylesheets/style.css' />
+    </head>
+    <body>
+        <h1>Login</h1>
+        <p>Welcome to Login</p>
+        <form action="/login" method="POST">
+
+            <label for="username"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="username" value="<%= username %>">
+
+            <label for="password"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="password" value="<%= password %>">
+            <input type="hidden" name="redirect" value="<%= redirect %>">
+
+            <button type="submit">Login</button>
+        </form>
+    </body>
+</html>
+
+
